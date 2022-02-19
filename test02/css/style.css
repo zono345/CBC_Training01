@@ -1,31 +1,38 @@
 @charset "UTF-8";
 /* 初期設定 */
-body{
+body {
     color: #060606;
     font-size: 16px;
     font-family: sans-serif;
+    letter-spacing: 0.06em;
 }
-a{
+a {
     text-decoration: none;
     color: #060606;
 }
-/* 枠線の確認用に一時的に適応　後で削除 */
-body, header, footer, main, section, div, p, li, dt, dd, a{
+/* 枠線の確認用に一時的に適応。後でコメントアウトすること。 */
+/* body, header, footer, main, section, div, p, li, dt, dd, a {
     margin: 10px;
     padding: 10px;
 }
-header, footer, main, section{
+header, footer, main {
     border: 2px solid #f00;
 }
-div, p{
-    border: 1px solid #00f;
+section {
+    border: 2px solid #00f;
 }
-li, dt, dd, a{
+div, p {
+    border: 1px solid #f0f;
+}
+li, dt, dd, a {
     border: 1px dotted #0f0;
-}
+} */
+
 /* ここから追加 */
 .header {
-
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
 }
 .header__wrap {
     width: 85%;
@@ -38,23 +45,151 @@ li, dt, dd, a{
     width: 54px;
     height: 76px;
 }
+.header__logo a {
+    display: block;
+}
+
 .header__menu {
+}
+.header__menu ul {
     display: flex;
 }
-.header__menu li {
-    width: 100px;
+.header__menu ul li {
+    width: 80px;
 }
-.main{
+.header__menu ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
 
+.main{
 }
+.main__kv {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/top_kv.jpg) center/cover no-repeat;
+    font: normal 24px/1.8 sans-serif;
+    padding-left: 10%;
+}
+.main__about {
+    width: 85%;
+    margin: 50px auto 200px;
+    padding: 0 10px 80px;
+}
+.main__about--ttl {
+    margin-bottom: 60px;
+    text-align: center;
+    color: #060606;
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: 60px;
+}
+.main__about--logo {
+    width: 40%;
+    margin: 0 auto;
+}
+.main__about--txt {
+    margin: 45px 0 60px;
+    text-align: center;
+    padding: 0 20px;
+    font: normal 16px/2 sans-serif;
+    letter-spacing: 4px;
+}
+.main__service {
+    width: 85%;
+    margin: 10px auto 100px;
+    padding: 20px 20px 100px;
+    background-color: #fffbe8;
+}
+.main__service--message {
+    margin-bottom: 95px;
+}
+.main__service--message h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.main__service--message p {
+    width: 67%;
+    margin: 40px 0 0 auto;
+    font-size: 16px;
+    line-height: 2.2;
+    letter-spacing: 2px;
+}
+
+.main__service--list {
+    display: flex;
+}
+.main__service--list li {
+    flex: 1;
+    margin-left: 2%;
+}
+.main__service--list li a {
+    display: block;
+    height: 100%;
+}
+.main__service--list li img {
+    width: 100%;
+    display: block;
+}
+.main__service--list li h3 {
+    margin: 50px 0 30px 0;
+}
+.main__service--list li p {
+}
+
+.main__news {
+    width: 85%;
+    margin: 10px auto;
+    padding: 0 20px 0;
+}
+.main__news--ttl {
+    margin-bottom: 16px;
+    font-size: 48px;
+}
+.main__news--list {
+    padding: 40px 12px;
+    border-top: 1px solid #a7b7bf;
+}
+.main__news--list li {
+    border-bottom: 1px solid #e8ecee;
+}
+.main__news--list li:first-child {
+    border-top: 1px solid #e8ecee;
+}
+.main__news--list li a {
+    display: block;
+    padding: 50px 20px;
+    display: block;
+}
+.main__news--list li a:hover {
+    background: #e8ecee;
+}
+.main__news--item {
+    display: flex;
+}
+.main__news--day {
+    width: 265px;
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+.main__news--data {
+    line-height: 1.8;
+}
+
 .footer{
-    padding: 90px 0 70px;
+    padding: 90px 0 71px;
+    border-top: 1px solid #e8ecee;
 }
 .footer__logo {
     width: 100px;
     margin: 0 auto;
 }
 .footer__copyright {
-    margin-top: 30px;
+    color: #b5b5b5;
+    font-size: 11px;
+    margin-top: 31px;
     text-align: center;
 }
