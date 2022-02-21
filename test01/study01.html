@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>flexテスト</title>
+</head>
+<body>
+    <style>
+    /* ここにcssを記入できます */
+    .list > li {
+        position: relative;
+        border-bottom: 1px solid #222;
+    }
+    .list > li:first-child {
+        border-top: 1px solid #222;
+    }
+    .list > li::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: calc(50% - 2px);
+        right: 10px;
+        width: 4px;
+        height: 4px;
+        border-top: 2px solid #7a0;
+        border-right: 2px solid #7a0;
+        transform: rotate(45deg);
+    }
+
+
+
+
+    </style>
+    <!-- ここにhtmlを記入します -->
+    <ul class="list">
+        <li>リスト1</li>
+        <li>リスト2</li>
+        <li>リスト3</li>
+        <li>リスト4</li>
+
+
+</body>
+</html>
