@@ -8,9 +8,8 @@
 </head>
 
 <body>
-
-<header>
-    <div class="header__contents">
+<heder>
+    <div class="heder__contents">
         <div class="header__contents--text">
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
         </div>
@@ -25,7 +24,7 @@
     <div class="header__image">
         <img src="">
     </div>
-</header>
+</heder>
 
 <nav>
     <ul>
@@ -94,7 +93,33 @@
     </section>
 </main>
 
-<footer class="footer">
+<footer>
+    <div class="footer">
+        <div class="footer__image"></div>
+        <h2>タイトル</h2>
+
+        <div class="footer__column">
+            <div class="footer__column--form">
+                フォーム説明文
+                <form action="send.php" method="POST">
+                    お名前<br>
+                    <input type="text" name="inputName">
+                    メールアドレス<br>
+                    <input type="text" name="inputMail">
+                    問い合わせ内容<br>
+                    <textarea name="toiawase"></textarea>
+                    <input type="submit" value="送信">
+                </form>
+            </div>
+            <div class="footer__column--map">
+                Googlemapが入ります。
+                <div>
+                    住所情報が入ります。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copy">© 2019 Created by CBC</div>
 </footer>
 
 </body>

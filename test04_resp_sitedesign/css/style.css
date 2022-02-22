@@ -1,34 +1,152 @@
 @charset "UTF-8";
 /* 初期設定 */
 body {
-    color: #060606;
-    font-size: 16px;
-    font-family: sans-serif;
-    letter-spacing: 0.06em;
+    font: normal 16px/1.8em Arial,Helvetica,sans-serif;;
+    color: #7bc2ba;
 }
 a {
     text-decoration: none;
-    color: #060606;
 }
 
 
-/* 枠線の確認用に一時的に適応。後でコメントアウトすること。 */
-/* body, header, footer, main, section, div, p, li, dt, dd, a {
-    margin: 10px;
-    padding: 10px;
-}
-header, footer, main {
-    border: 2px solid #f00;
-}
-section {
-    border: 2px solid #00f;
-}
-div, p {
-    border: 1px solid #f0f;
-}
-li, dt, dd, a {
-    border: 1px dotted #0f0;
-} */
+/* ////////////////////////////////////////////////////////////// */
+/* よく使われる枠。後でコメントアウトすること。 */
 
 
-/* ここから追加 */
+
+
+/* ////////////////////////////////////////////////////////////// */
+
+/* ここから必要なコーディング開始 */
+/* //////////// header footer //////////// */
+.header {
+
+}
+.header__navi {
+
+}
+.header__navi li a {
+
+}
+.header__sns {
+
+}
+.header__sns li {
+
+}
+
+.logo {
+
+}
+
+.footer {
+
+}
+.footer__inner {
+
+}
+.footer__navi {
+
+}
+.footer__navi li {
+
+}
+.footer__sns {
+
+}
+.footer__sns ul {
+
+}
+.footer__sns ul li {
+
+}
+.copyright {
+
+}
+
+/* //////////// philosophy //////////// */
+.philosophy {
+
+}
+.philosophy__right {
+
+}
+.philosophy__left {
+
+}
+.philosophy__left-title {
+
+}
+.philosophy__left-top {
+
+}
+.philosophy__left-bottom {
+
+}
+.philosophy__button {
+
+}
+
+/* //////////// NEWS //////////// */
+.news {
+
+}
+.news_title {
+
+}
+.news_list {
+
+}
+.news_list li {
+
+}
+.news_list-img {
+
+}
+.news_list-txt {
+
+}
+.news_list-txt dd {
+
+}
+.news_button {
+
+}
+/* //////////// INSTAGRAM //////////// */
+.instagram {
+
+}
+.instagram__title {
+
+}
+.instagram__list {
+
+}
+.instagram__list li {
+
+}
+.instagram__button {
+
+}
+/* //////////// ACCESS //////////// */
+.access {
+
+}
+.access__title {
+
+}
+.access__map {
+
+}
+.access__detail {
+
+}
+.access__detail dl {
+
+}
+.access__detail dl dt {
+
+}
+.access__detail dl dd {
+
+}
