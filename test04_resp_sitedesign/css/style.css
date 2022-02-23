@@ -11,142 +11,122 @@ a {
 
 /* ////////////////////////////////////////////////////////////// */
 /* よく使われる枠。後でコメントアウトすること。 */
-
-
+/* 大枠 */
+header,footer,nav,main {
+    margin: 2px;
+    border: 2px solid #f00;
+}
+/* 小枠 */
+div,ul {
+    margin: 2px;
+    border: 2px solid #00f;
+}
+li,form,img,h1,h2 {
+    margin: 2px;
+    border: 1px solid #0f0;
+}
 
 
 /* ////////////////////////////////////////////////////////////// */
 
 /* ここから必要なコーディング開始 */
-/* //////////// header footer //////////// */
-.header {
+/* //////////// header //////////// */
+header {
 
 }
-.header__navi {
+.header__contents {
 
 }
-.header__navi li a {
+.header__contents--left {
 
 }
-.header__sns {
+.header__contents--logo {
 
 }
-.header__sns li {
+.header__contents--right {
+
+}
+.header__image {
 
 }
 
-.logo {
+/* //////////// nav //////////// */
+nav {
+
+}
+nav ul {
+
+}
+nav ul li {
+
+}
+nav ul li a {
 
 }
 
+/* //////////// footer //////////// */
+footer {
+
+}
 .footer {
 
 }
-.footer__inner {
+.footer h2 {
 
 }
-.footer__navi {
+.footer__image {
 
 }
-.footer__navi li {
+.footer__column {
 
 }
-.footer__sns {
+.footer__column--form {
 
 }
-.footer__sns ul {
+.footer__column--form form {
 
 }
-.footer__sns ul li {
+.footer__column--form form input[type="text"] {
 
 }
-.copyright {
+.footer__column--form form textarea {
 
 }
-
-/* //////////// philosophy //////////// */
-.philosophy {
+.footer__column--form form input[type="submit"] {
 
 }
-.philosophy__right {
+.footer__column--map {
 
 }
-.philosophy__left {
-
-}
-.philosophy__left-title {
-
-}
-.philosophy__left-top {
-
-}
-.philosophy__left-bottom {
-
-}
-.philosophy__button {
+.footer__copy {
 
 }
 
-/* //////////// NEWS //////////// */
-.news {
+/* //////////// コンテンツ //////////// */
+main {
 
 }
-.news_title {
+.menu {
 
 }
-.news_list {
+.menu__content {
 
 }
-.news_list li {
+.menu__content--text {
 
 }
-.news_list-img {
+.menu__content--image {
 
 }
-.news_list-txt {
+.vision {
 
 }
-.news_list-txt dd {
+.vision__image {
 
 }
-.news_button {
+.vision__column {
 
 }
-/* //////////// INSTAGRAM //////////// */
-.instagram {
-
-}
-.instagram__title {
-
-}
-.instagram__list {
-
-}
-.instagram__list li {
-
-}
-.instagram__button {
-
-}
-/* //////////// ACCESS //////////// */
-.access {
-
-}
-.access__title {
-
-}
-.access__map {
-
-}
-.access__detail {
-
-}
-.access__detail dl {
-
-}
-.access__detail dl dt {
-
-}
-.access__detail dl dd {
+.vision__column--item {
 
 }
