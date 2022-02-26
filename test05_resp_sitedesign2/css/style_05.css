@@ -115,49 +115,122 @@ li {
 /* //////////// philosophy //////////// */
 .philosophy {
     display: flex;
-    
+    height: 680px;
 }
+/* 共通のCSS */
+.philosophy__right,
+.philosophy__left {
+    width: 50%;
+}
+
 .philosophy__right {
 }
 .philosophy__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.philosophy__left-top,
+.philosophy__left-bottom {
+    line-height: 1.6;
 }
 .philosophy__left-title {
 }
 .philosophy__left-top {
+    margin-top: 40px;
 }
 .philosophy__left-bottom {
+    margin-top: 20px;
 }
 .philosophy__button {
+    margin-top: 50px;
+    border: 1px solid #fff;
+    width: 180px;
+}
+.philosophy__button a {
+    text-align: center;
+    padding: 16px 0;
+    font-size: 14px;
 }
 
 /* //////////// news //////////// */
 .news {
+    padding: 100px 0;
 }
 .news__title {
+    font-size: 24px;
+}
+.news__title span {
+    font-size: 16px;
+    margin-left: 16px;
 }
 .news__list {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 40px;
 }
 .news__list li {
+    width: calc(100% / 4 - 15px);
+}
+.news__list li:not(:last-child) {
+    margin-right: 30px;
 }
 .news__list-img {
 }
 .news__list-txt {
+    margin-top: 10px;
+    font-size: 14px;
 }
 .news__list-txt dd {
+    margin-top: 10px;
 }
 .news__button {
+    border: 1px solid #242424;
+    width: 180px;
+    margin: 60px auto 0;
+    text-align: center;
+    font-size: 14px;
+}
+.news__button a {
+    padding: 16px 0;
 }
 
 /* //////////// instagram //////////// */
 .instagram {
+    background: #fff;
+    padding: 100px 0;
 }
 .instagram__title {
+    font-size: 24px;
+}
+.instagram__title span {
+    font-size: 16px;
+    margin-left: 16px;
 }
 .instagram__list {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 40px;
 }
 .instagram__list li {
+    width: calc(100% / 4 - 15px);
+}
+.instagram__list li:not(:last-child) {
+    margin-right: 30px;
 }
 .instagram__button {
+    border: 1px solid #242424;
+    width: 180px;
+    margin: 60px auto 0;
+}
+.instagram__button a {
+    text-align: center;
+    padding: 16px 0;
+    font-size: 14px;
 }
 
 /* //////////// access //////////// */
