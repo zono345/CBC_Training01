@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>CBC jQuery</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_06.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<script>
+/* ここにjQueryを記述する */
+$(function(){
+    $('#change_btn').click(function(){
+        $('#box').css({'color':'#0094d7'})
+    });
+});
+
+$(function(){
+    $('#text').mouseover(function(){
+        $(this).removeClass('hover_off');
+        $(this).addClass('hover_on');
+    });
+    $('#text').mouseout(function(){
+        $(this).removeClass('hover_on');
+        $(this).addClass('hover_off');
+    });
+
+});
+
+</script>
+
+<body>
+<section>
+    <div id="change_btn">ボタン</div>
+    <div id="box">
+        クリックをトリガーとして文字の色を変更するサンプルです。<br>
+        これは"changeColor_btn"というクラスがついている要素をクリックした時に<br>
+        "box"というidがついている要素内の文字色を変更しています。
+    </div>
+
+    <br><br>
+    <div id="text" class="hover_off">
+        背景色を変更するサンプルです。<br>
+        これは"text"というクラスがついている要素にマウスを乗せた時に<br>
+        "text"要素の背景色を変更しています。
+    </div>
+
+</section>
+
+</body>
+</html>

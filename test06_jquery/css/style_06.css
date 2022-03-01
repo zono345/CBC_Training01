@@ -1,0 +1,25 @@
+@charset "UTF-8";
+#change_btn {
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+#box {
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
+#text {
+    padding: 10px;
+    border: 1px solid #000;
+}
+.hover_off {
+    color: #000;
+    background: #fff;
+}
+.hover_on {
+    color: #fff;
+    background: #0094d7;
+}
