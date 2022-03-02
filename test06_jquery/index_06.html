@@ -25,8 +25,13 @@ $(function(){
         $(this).removeClass('hover_on');
         $(this).addClass('hover_off');
     });
-
 });
+
+$(function(){
+    $('.accordion > li > div').click(function(){ /* .accordion > li > divをクリックした時に */
+        $(this).next('ul').slideToggle('fast'); /* クリックされた要素の次にあるdivを表示させる。*/
+    })
+})
 
 </script>
 
@@ -45,6 +50,34 @@ $(function(){
         これは"text"というクラスがついている要素にマウスを乗せた時に<br>
         "text"要素の背景色を変更しています。
     </div>
+
+    <br><br>
+    <ul class="accordion">
+        <li>
+            <div>アコーディオン1</div>
+            <ul class="accordion_inner">
+                <li>コンテンツ1</li>
+                <li>コンテンツ2</li>
+                <li>コンテンツ3</li>
+            </ul>
+        </li>
+        <li>
+            <div>アコーディオン2</div>
+            <ul class="accordion_inner">
+                <li>コンテンツ1</li>
+                <li>コンテンツ2</li>
+                <li>コンテンツ3</li>
+            </ul>
+        </li>
+        <li>
+            <div>アコーディオン3</div>
+            <ul class="accordion_inner">
+                <li>コンテンツ1</li>
+                <li>コンテンツ2</li>
+                <li>コンテンツ3</li>
+            </ul>
+        </li>
+    </ul>
 
 </section>
 
