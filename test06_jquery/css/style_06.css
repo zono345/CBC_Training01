@@ -54,3 +54,45 @@ ul,li {
     border-right: 1px solid #0094d7;
     border-bottom: 1px solid #0094d7;
 }
+
+.pageTop_btn {
+    width: 60px;
+    height: 60px;
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+#nav {
+    position: relative;
+}
+#nav li {
+    display: inline-block;
+    background-color: #ccc;
+    padding: 10px 20px;
+}
+.tooltips {
+    padding: 0.3em 1em;
+    position: absolute;
+    top: 40px;
+    color: #fff;
+    background-color: #51a2c1;
+    border-radius: 0.6em;
+    z-index: 100;
+}
+.tooltips::after {
+    color: #fff;
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #654;
+    border-left: 10px solid transparent;
+}
