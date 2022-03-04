@@ -87,6 +87,43 @@ $(function(){
     });
 });
 
+$(function(){
+    $('#tax_console').change(function(){
+        var num = parseInt($('.ex_price_console').val());
+        var floatTax = num * 0.08;
+        console.log("floatTax -> ", floatTax);
+        var t = tax(num);
+        $('.ex_tax_console').text(t);
+    });
+});
+
+$(function(){
+    $('.modal-open').on('click',function(){
+        $('#contents').css('filter','none');
+        $('body').append('<div class="modal-overlay"></div>');
+        $('.modal-content,.modal-overlay').fadeIn('slow');
+
+        $('.modal-overlay').click(function(){
+            $('.modal-content,.modal-overlay').fadeOut('slow',function(){
+                $('.modal-overlay').remove();
+            });
+        });
+
+        modalResize();
+
+        function modalResize() {
+            var w = $(window).width();
+            var h = $(window).height();
+            var cw = $('.modal-content').outerWidth();
+            var ch = $('.modal-content').outerHeight();
+            $('.modal-content').css({
+                'left' : ((w - cw)/2) + 'px',
+                'top' : ((h - ch)/2) + 'px'
+            });
+        }
+    });
+});
+
 
 </script>
 
@@ -99,14 +136,14 @@ $(function(){
         "box"というidがついている要素内の文字色を変更しています。
     </div>
 
-    <br><br>
+    <br>
     <div id="text" class="hover_off">
         背景色を変更するサンプルです。<br>
         これは"text"というクラスがついている要素にマウスを乗せた時に<br>
         "text"要素の背景色を変更しています。
     </div>
 
-    <br><br>
+    <br>
     <ul class="accordion">
         <li>
             <div>アコーディオン1</div>
@@ -160,6 +197,18 @@ $(function(){
 <br>
 <div id="tax">
     <input class="ex_price" type="number" style="width: 100px;" > 消費税:<span class="ex_tax"></span> 円
+</div>
+
+<br>
+<div id="tax_console">
+    <input class="ex_price_console"> 消費税：<span class="ex_tax_console"></span> 円
+</div>
+
+<br>
+<div class="modal-open">モーダル起動！</div>
+<div class="modal-content">
+    モーダルウィンドウの中身<br>
+    モーダルウィンドウの中身
 </div>
 
 <br>テスト
