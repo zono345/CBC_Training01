@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>CBC Animation</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_08.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<script>
+////////////////////* ここにjQueryを記述する *////////////////////
+$(function(){
+    $('.btn3').click(function(){
+        $('.trans3').toggleClass('active');
+    });
+});
+
+$(function(){
+    $('.btn4').click(function(){
+        $('.trans4').toggleClass('active');
+    });
+});
+
+</script>
+
+<body>
+
+<div>
+    <div class="trans1 end">trans1</div>
+    <div class="trans2 end">trans2</div>
+</div>
+
+<br>
+<ul class="mouse">
+    <li><a href="">メニューA</a></li>
+    <li><a href="">メニューB</a></li>
+    <li><a href="">メニューC</a></li>
+</ul>
+
+<br>
+<button class="btn3">トリガー[クリック]</button>
+<div style="height: 50px;">
+    <div class="trans3"></div>
+</div>
+
+<button class="btn4">トリガー[クリック]</button>
+<div class="trans4-container">
+    <div class="trans4"></div>
+</div>
+
+
+
+
+</body>
+</html>
